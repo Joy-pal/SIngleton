@@ -12,17 +12,9 @@ the new variable also points to the first instance created.
 
 
 # Singleton class
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package firstproject;
-
-/**
- *
- * @author Joy
- */
+ 
 public class Singleton {
     
     private static Singleton s=new Singleton();
@@ -38,52 +30,38 @@ public class Singleton {
 
 
 # TextSingleton
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package firstproject;
+  
+ 
+        package firstproject;
 
-/**
- *
- * @author Joy
- */
-public class TextSingleton {
-    private static TextSingleton t=null;
-    private TextSingleton(){}
-    public static TextSingleton getInstance(){
-        if(t  != null){
-        } else {
-            t=new TextSingleton();
-        }
-        
-        return t;
-    }
-    
-}
+                        public class TextSingleton {
+                            private static TextSingleton t=null;
+                            private TextSingleton(){}
+                            public static TextSingleton getInstance(){
+                                if(t  != null){
+                                } else {
+                                    t=new TextSingleton();
+                                }
+
+                                return t;
+                            }
+
+                        }
 
 
 # MainClass Of the Project.
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package firstproject;
 
-/**
- *
- * @author Joy
- */
+
+ 
+ 
+ 
 public class FirstProject {
 
     private static Singleton s,s1;
     private static TextSingleton t,t1;
 
-    /**
-     * @param args the command line arguments
-     */
     
     public static void main(String[] args) {
        
@@ -97,8 +75,7 @@ public class FirstProject {
            System.out.println(s.toString());
            System.out.println(s1.toString());
            
-           
-       } 
+            } 
        
         else
             System.out.println("not instantiated");System.out.println(t.toString());
